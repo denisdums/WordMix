@@ -1,0 +1,35 @@
+type WordPressMenuItem {
+    id: Int!
+    title: String!
+    status: String!
+    url: String!
+    attr_title: String!
+    description: String!
+    type: String!
+    type_label: String!
+    object: String!
+    object_id: Int!
+    parent: Int!
+    menu_order: Int!
+    target: String!
+    classes: [String]!
+    xfn: [String]!
+    invalid: Boolean!
+    meta: [String]!
+    menus: Int!
+}
+
+type WordPressMenu {
+    id: Int!
+    description: String!
+    name: String!
+    slug: String!
+    meta: [String]!
+    locations: [String]!
+    auto_add: Boolean!
+    items: [WordPressMenuItem!]!
+}
+
+type Query {
+    getMenuByName(name: String): WordPressMenu
+}

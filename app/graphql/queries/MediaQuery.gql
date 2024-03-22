@@ -1,0 +1,6 @@
+fragment BaseMediaFragment on WordPressMedia {
+    id
+    alt_text
+    mime_type
+    source_url
+}

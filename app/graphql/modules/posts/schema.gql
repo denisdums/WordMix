@@ -1,0 +1,56 @@
+interface IWordPressPost {
+    id: Int
+    date: String
+    date_gmt: String
+    guid: String
+    modified: String
+    modified_gmt: String
+    slug: String
+    status: String
+    type: String
+    link: String
+    title: String
+    content: String
+    excerpt: String
+    author: Int
+    featured_media: Int
+    comment_status: String
+    ping_status: String
+    sticky: Boolean
+    template: String
+    format: String
+    meta: [String]
+    categories: [Int]
+    tags: [Int]
+}
+
+type WordPressPost implements IWordPressPost {
+    id: Int
+    date: String
+    date_gmt: String
+    guid: String
+    modified: String
+    modified_gmt: String
+    slug: String
+    status: String
+    type: String
+    link: String
+    title: String
+    content: String
+    excerpt: String
+    author: Int
+    featured_media: Int
+    comment_status: String
+    ping_status: String
+    sticky: Boolean
+    template: String
+    format: String
+    meta: [String]
+    categories: [Int]
+    tags: [Int]
+}
+
+type Query {
+    posts: [WordPressPost]
+}
+

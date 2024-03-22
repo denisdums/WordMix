@@ -1,0 +1,68 @@
+type Query {
+    getMediaByID(id: Int!): WordPressMedia
+}
+
+type WordPressMedia {
+    id: Int!
+    date: String!
+    date_gmt: String!
+    guid: String!
+    modified: String!
+    modified_gmt: String!
+    slug: String!
+    status: String!
+    type: String!
+    link: String!
+    title: String!
+    author: Int!
+    comment_status: String!
+    ping_status: String!
+    template: String!
+    meta: WordPressMediaImageMeta
+    description: String!
+    caption: String!
+    alt_text: String!
+    media_type: String!
+    mime_type: String!
+    media_details: WordPressMediaDetails
+    source_url: String!
+    post: Int
+}
+
+type WordPressMediaDetails {
+    width: Int!
+    height: Int!
+    file: String!
+    filesize: Int!
+    sizes: [WordPressMediaSize!]!
+    image_meta: WordPressMediaImageMeta!
+}
+
+type WordPressMediaSize {
+    thumbnail: WordPressMediaSizeDetails!
+    full: WordPressMediaSizeDetails!
+}
+
+type WordPressMediaSizeDetails {
+    file: String!
+    width: Int!
+    height: Int!
+    filesize: Int!
+    mime_type: String!
+    source_url: String!
+}
+
+type WordPressMediaImageMeta {
+    aperture: String!
+    credit: String!
+    camera: String!
+    caption: String!
+    created_timestamp: String!
+    copyright: String!
+    focal_length: String!
+    iso: String!
+    shutter_speed: String!
+    title: String!
+    orientation: String!
+    keywords: [String]!
+}

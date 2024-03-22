@@ -1,0 +1,39 @@
+query MenuQueryByName($name: String!) {
+    getMenuByName(name: $name) {
+        ...MenuFragment
+    }
+}
+
+fragment MenuFragment on WordPressMenu {
+    id
+    description
+    name
+    slug
+    meta
+    locations
+    auto_add
+    items {
+        ...MenuItemFragment
+    }
+}
+
+fragment MenuItemFragment on WordPressMenuItem {
+    id
+    title
+    status
+    url
+    attr_title
+    description
+    type
+    type_label
+    object
+    object_id
+    parent
+    menu_order
+    target
+    classes
+    xfn
+    invalid
+    meta
+    menus
+}

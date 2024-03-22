@@ -1,0 +1,27 @@
+type WordPressSettings {
+    title: String
+    description: String
+    url: String
+    email: String
+    timezone: String
+    date_format: String
+    time_format: String
+    start_of_week: Int
+    language: String
+    use_smilies: Boolean
+    default_category: Int
+    default_post_format: String
+    posts_per_page: Int
+    show_on_front: String
+    page_on_front: Int
+    page_for_posts: Int
+    default_ping_status: String
+    default_comment_status: String
+    site_logo: WordPressMedia
+    site_icon: Int
+}
+
+type Query {
+    settings: WordPressSettings
+}
+

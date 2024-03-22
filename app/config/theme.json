@@ -1,0 +1,315 @@
+{
+  "version": 2,
+  "settings": {
+    "layout": {
+      "wideSize": "1400px",
+      "contentSize": "900px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Royal 1000",
+          "slug": "royal-1000",
+          "color": "#000000"
+        },
+        {
+          "name": "Royal 900",
+          "slug": "royal-900",
+          "color": "#18151A"
+        },
+        {
+          "name": "Royal 800",
+          "slug": "royal-800",
+          "color": "#251F27"
+        },
+        {
+          "name": "Royal 700",
+          "slug": "royal-700",
+          "color": "#312A34"
+        },
+        {
+          "name": "Royal 600",
+          "slug": "royal-600",
+          "color": "#3E3542"
+        },
+        {
+          "name": "Royal 500",
+          "slug": "royal-500",
+          "color": "#645D67"
+        },
+        {
+          "name": "Royal 400",
+          "slug": "royal-400",
+          "color": "#8B858D"
+        },
+        {
+          "name": "Royal 300",
+          "slug": "royal-300",
+          "color": "#B1AEB3"
+        },
+        {
+          "name": "Royal 200",
+          "slug": "royal-200",
+          "color": "#D8D6D9"
+        },
+        {
+          "name": "Royal 100",
+          "slug": "royal-100",
+          "color": "#F8F8F8"
+        },
+        {
+          "name": "Clouded 1000",
+          "slug": "clouded-1000",
+          "color": "#071531"
+        },
+        {
+          "name": "Clouded 900",
+          "slug": "clouded-900",
+          "color": "#0E2B62"
+        },
+        {
+          "name": "Clouded 800",
+          "slug": "clouded-800",
+          "color": "#154193"
+        },
+        {
+          "name": "Clouded 700",
+          "slug": "clouded-700",
+          "color": "#1C57C4"
+        },
+        {
+          "name": "Clouded 600",
+          "slug": "clouded-600",
+          "color": "#246DF6"
+        },
+        {
+          "name": "Clouded 500",
+          "slug": "clouded-500",
+          "color": "#4F8AF7"
+        },
+        {
+          "name": "Clouded 400",
+          "slug": "clouded-400",
+          "color": "#7BA7F9"
+        },
+        {
+          "name": "Clouded 300",
+          "slug": "clouded-300",
+          "color": "#A7C4FB"
+        },
+        {
+          "name": "Clouded 200",
+          "slug": "clouded-200",
+          "color": "#D3E1FD"
+        },
+        {
+          "name": "Clouded 100",
+          "slug": "clouded-100",
+          "color": "#E9F0FE"
+        },
+        {
+          "name": "Egg 1000",
+          "slug": "egg-1000",
+          "color": "#332A02"
+        },
+        {
+          "name": "Egg 900",
+          "slug": "egg-900",
+          "color": "#655503"
+        },
+        {
+          "name": "Egg 800",
+          "slug": "egg-800",
+          "color": "#998006"
+        },
+        {
+          "name": "Egg 700",
+          "slug": "egg-700",
+          "color": "#CCAB08"
+        },
+        {
+          "name": "Egg 600",
+          "slug": "egg-600",
+          "color": "#FFD60A"
+        },
+        {
+          "name": "Egg 500",
+          "slug": "egg-500",
+          "color": "#FFDE3B"
+        },
+        {
+          "name": "Egg 400",
+          "slug": "egg-400",
+          "color": "#FFE66C"
+        },
+        {
+          "name": "Egg 300",
+          "slug": "egg-300",
+          "color": "#FFEE9D"
+        },
+        {
+          "name": "Egg 200",
+          "slug": "egg-200",
+          "color": "#FFF6CE"
+        },
+        {
+          "name": "Egg 100",
+          "slug": "egg-100",
+          "color": "#FFFAE6"
+        },
+        {
+          "name": "Begonia 1000",
+          "slug": "begonia-1000",
+          "color": "#321517"
+        },
+        {
+          "name": "Begonia 900",
+          "slug": "begonia-900",
+          "color": "#63292F"
+        },
+        {
+          "name": "Begonia 800",
+          "slug": "begonia-800",
+          "color": "#963F47"
+        },
+        {
+          "name": "Begonia 700",
+          "slug": "begonia-700",
+          "color": "#C8545F"
+        },
+        {
+          "name": "Begonia 600",
+          "slug": "begonia-600",
+          "color": "#FA6977"
+        },
+        {
+          "name": "Begonia 500",
+          "slug": "begonia-500",
+          "color": "#FB8792"
+        },
+        {
+          "name": "Begonia 400",
+          "slug": "begonia-400",
+          "color": "#FCA5AD"
+        },
+        {
+          "name": "Begonia 300",
+          "slug": "begonia-300",
+          "color": "#FDC3C8"
+        },
+        {
+          "name": "Begonia 200",
+          "slug": "begonia-200",
+          "color": "#FEE1E3"
+        },
+        {
+          "name": "Begonia 100",
+          "slug": "begonia-100",
+          "color": "#FEF0F1"
+        },
+        {
+          "name": "Green 1000",
+          "slug": "green-1000",
+          "color": "#012417"
+        },
+        {
+          "name": "Green 900",
+          "slug": "green-900",
+          "color": "#01472D"
+        },
+        {
+          "name": "Green 800",
+          "slug": "green-800",
+          "color": "#036C45"
+        },
+        {
+          "name": "Green 700",
+          "slug": "green-700",
+          "color": "#04905C"
+        },
+        {
+          "name": "Green 600",
+          "slug": "green-600",
+          "color": "#05B473"
+        },
+        {
+          "name": "Green 500",
+          "slug": "green-500",
+          "color": "#37C38F"
+        },
+        {
+          "name": "Green 400",
+          "slug": "green-400",
+          "color": "#69D2AB"
+        },
+        {
+          "name": "Green 300",
+          "slug": "green-300",
+          "color": "#9BE1C7"
+        },
+        {
+          "name": "Green 200",
+          "slug": "green-200",
+          "color": "#CDF0E3"
+        },
+        {
+          "name": "Green 100",
+          "slug": "green-100",
+          "color": "#E6F7F1"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#FFFFFF"
+        }
+      ]
+    },
+    "typography": {
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "name": "Urbanist",
+          "slug": "urbanist",
+          "fontFamily": "Urbanist"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Headline",
+          "slug": "headline",
+          "size": "3.25rem"
+        },
+        {
+          "name": "Heading",
+          "slug": "heading",
+          "size": "2.375rem"
+        },
+        {
+          "name": "SubHeading",
+          "slug": "subheading",
+          "size": "1.5rem"
+        },
+        {
+          "name": "Tall",
+          "slug": "tall",
+          "size": "1.25rem"
+        },
+        {
+          "name": "Button",
+          "slug": "button",
+          "size": "1.125rem"
+        },
+        {
+          "name": "Body",
+          "slug": "body",
+          "size": "1rem"
+        },
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.75rem"
+        }
+      ]
+    }
+  }
+}

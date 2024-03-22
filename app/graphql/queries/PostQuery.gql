@@ -1,0 +1,4 @@
+fragment BasePostFragment on WordPressPost {
+    title
+    content
+}
