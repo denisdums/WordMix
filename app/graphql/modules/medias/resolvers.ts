@@ -1,7 +1,7 @@
 const resolvers = {
     Query: {
         getMediaByID: async (_: any, {name}: any, context: any) => {
-            return await context.mediaLoader.getMediaByID(name);
+            return await context.loaders.mediaLoader.getMediaByID(name);
         }
     },
 

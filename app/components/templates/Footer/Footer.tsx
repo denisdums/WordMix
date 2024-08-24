@@ -13,10 +13,10 @@ export default function Footer(props: FooterProps) {
                 <img src={props.siteLogo.source_url} alt={props.siteLogo.alt_text} className='h-full'/>
             </div>
             <nav>
-                <ul className="flex items-center justify-end gap-4">
+                <ul className="flex items-center justify-end gap-4 list-none">
                     {props.menu?.items?.map((item) => (
                         <li key={item.id}>
-                            <Link to={item.url} className="hover:underline">
+                            <Link to={item.url} className="no-underline hover:underline">
                                 {item.title}
                             </Link>
                         </li>

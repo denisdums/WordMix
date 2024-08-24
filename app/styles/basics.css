@@ -1,0 +1,45 @@
+/***
+* Heading styles
+*/
+h1, .seems-h1 {
+    @apply text-4xl font-bold;
+}
+
+h2, .seems-h2 {
+    @apply text-3xl font-bold;
+}
+
+h3, .seems-h3 {
+    @apply text-2xl font-bold;
+}
+
+h4, .seems-h4 {
+    @apply text-xl font-bold;
+}
+
+h5, .seems-h5 {
+    @apply text-lg font-bold;
+}
+
+h6, .seems-h6 {
+    @apply text-base font-bold;
+}
+
+/***
+ * Spacer styles
+ */
+
+hr {
+    @apply border-t border-gray-300 my-4;
+}
+
+/***
+ * List styles
+ */
+ul {
+    @apply list-disc list-inside;
+}
+
+ol {
+    @apply list-decimal list-inside
+}

@@ -1,8 +1,8 @@
 import {Outlet, useLoaderData} from "@remix-run/react";
 import {LoaderFunction} from "@remix-run/node";
 import {MenuQueryByNameDocument} from "~/graphql/build/graphql";
-import Header from "~/components/molecules/Header/Header";
-import Footer from "~/components/molecules/Footer/Footer";
+import Header from "~/components/templates/Header/Header";
+import Footer from "~/components/templates/Footer/Footer";
 
 
 export const loader: LoaderFunction = async ({context}) => {
@@ -24,7 +24,7 @@ export default function Index() {
     return (
         <>
             <Header menu={header} siteLogo={siteLogo}/>
-            <main className="max-w-5xl mx-auto">
+            <main>
                 <Outlet/>
             </main>
             <Footer menu={footer} siteLogo={siteLogo}/>

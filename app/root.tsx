@@ -1,21 +1,22 @@
-import {Links, Meta, Outlet, Scripts, ScrollRestoration} from "@remix-run/react";
+import {Links, Meta, Outlet, Scripts, ScrollRestoration, useNavigation} from "@remix-run/react";
 import {LinksFunction} from "@remix-run/node";
 
-import CommonBuildStyle from "@wordpress/block-library/build-style/common.css?url"
-import StyleBuildStyle from "@wordpress/block-library/build-style/style.css?url"
-import ThemeBuildStyle from "@wordpress/block-library/build-style/theme.css?url"
+import AppStyle from "~/styles/app.css?url";
 import TailwindStyle from "~/styles/tailwind.css?url";
-import BlocksStyle from "~/styles/blocks.css?url";
+import WordPressStyle from "~/styles/wordpress.css?url";
+import {usePageProgress} from "~/hooks/usePageProgress";
 
 export const links: LinksFunction = () => [
-    {rel: "stylesheet", href: CommonBuildStyle},
-    {rel: "stylesheet", href: StyleBuildStyle},
-    {rel: "stylesheet", href: ThemeBuildStyle},
     {rel: "stylesheet", href: TailwindStyle},
-    {rel: "stylesheet", href: BlocksStyle},
+    {rel: "stylesheet", href: WordPressStyle},
+    {rel: "stylesheet", href: AppStyle},
+    {rel: "stylesheet", href: "http://wordmix.docker/expose/head-styles.css"},
 ];
 
 export function Layout({children}: { children: React.ReactNode }) {
+
+    F
+
     return (
         <html lang="en">
         <head>

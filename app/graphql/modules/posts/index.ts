@@ -8,7 +8,10 @@ const module = {
         const axiosInstance = makeWordpressAxiosInstance();
         return {
             ...previousContext,
-            postLoader: new PostLoader(axiosInstance),
+            loaders: {
+                ...previousContext.loaders,
+                postLoader: new PostLoader(axiosInstance),
+            }
         }
     }
 };

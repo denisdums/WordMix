@@ -1,0 +1,5 @@
+query GetPostCollectionFacetsQuery($post_types: [String]) {
+    getPostCollectionFacets(post_types: $post_types) {
+        ...FacetsListFragment
+    }
+}

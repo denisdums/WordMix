@@ -1,13 +1,13 @@
 const resolvers = {
     Query: {
         getMenuByName: async (_: any, {name}: any, context: any) => {
-            return await context.menuLoader.getMenuByName(name);
+            return await context.loaders.menuLoader.getMenuByName(name);
         }
     },
 
     WordPressMenu: {
         items: async (menu: any, _: any, context: any) => {
-            return await context.menuLoader.getMenuItemsByMenuID(menu.id);
+            return await context.loaders.menuLoader.getMenuItemsByMenuID(menu.id);
         }
     },
 

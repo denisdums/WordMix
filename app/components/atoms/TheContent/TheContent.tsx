@@ -6,7 +6,7 @@ export type TheContentProps = {
 
 export default function TheContent(props: TheContentProps) {
     return (
-        <div className="the-content">
+        <div className="max-w-5xl mx-auto flex flex-col gap-4">
             {parse(props.content)}
         </div>
     );

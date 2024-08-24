@@ -1,4 +1,4 @@
-interface IWordPressPost {
+interface IPost {
     id: Int
     date: String
     date_gmt: String
@@ -13,7 +13,7 @@ interface IWordPressPost {
     content: String
     excerpt: String
     author: Int
-    featured_media: Int
+    featured_media: WordPressMedia
     comment_status: String
     ping_status: String
     sticky: Boolean
@@ -22,9 +22,10 @@ interface IWordPressPost {
     meta: [String]
     categories: [Int]
     tags: [Int]
+    permalink: String!
 }
 
-type WordPressPost implements IWordPressPost {
+type Post implements IPost {
     id: Int
     date: String
     date_gmt: String
@@ -39,7 +40,7 @@ type WordPressPost implements IWordPressPost {
     content: String
     excerpt: String
     author: Int
-    featured_media: Int
+    featured_media: WordPressMedia
     comment_status: String
     ping_status: String
     sticky: Boolean
@@ -48,9 +49,73 @@ type WordPressPost implements IWordPressPost {
     meta: [String]
     categories: [Int]
     tags: [Int]
+    permalink: String!
+}
+
+type PostCollection {
+    posts: [Post!]!
+    post_types: [String]
+    current_page: Int!
+    total_pages: Int!
+    total_posts: Int!
+    per_page: Int!
+    facets: [PostCollectionFacet]
+}
+
+input GetPostCollectionInput {
+    per_page: Int
+    page: Int
+    search: String
+    slug: [String]
+    after: String
+    modified_after: String
+    author: [Int]
+    author_exclude: [Int]
+    before: String
+    modified_before: String
+    exclude: [Int]
+    include: [Int]
+    offset: Int
+    order: [String]
+    orderby: [String]
+    search_columns: [String]
+    status: [String]
+    taxRelation: [String]
+    categories: String
+    categories_exclude: String
+    tags: String
+    tags_exclude: String
+    sticky: Boolean
+}
+
+input PostInput {
+    search: String
+    slug: [String]
+}
+
+input PostPreviewInput {
+    id: Int
+    nonce: String
 }
 
 type Query {
-    posts: [WordPressPost]
+    getPostCollection(input:GetPostCollectionInput): PostCollection
+    getPostCollectionFacets(post_types: [String]): [PostCollectionFacet]
+    getPostBySlug(slug: String!): Post
+    getPostByID(slug: String!): Post
+    getPostPreview(input: PostPreviewInput): Post
 }
+
+type PostCollectionFacet {
+    type: String
+    label: String
+    slug: String
+    values: [PostCollectionFacetValue]
+}
+
+type PostCollectionFacetValue {
+    name: String
+    value: String
+}
+
 

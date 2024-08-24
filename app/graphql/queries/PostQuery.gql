@@ -1,4 +1,70 @@
-fragment BasePostFragment on WordPressPost {
+fragment BasePostPageFragment on Post {
     title
     content
+    excerpt
+    date
+    slug
+    id
+    permalink
+    featured_media {
+        source_url
+    }
+}
+
+fragment BasePostCardFragment on Post {
+    title
+    excerpt
+    date
+    slug
+    id
+    permalink
+    featured_media {
+        source_url
+    }
+}
+
+fragment BasePostCollectionFragment on PostCollection {
+    posts {
+        ...BasePostCardFragment
+    }
+    current_page
+    total_pages
+    total_posts
+    per_page
+    facets {
+        ...FacetsListFragment
+    }
+}
+
+fragment FacetsListFragment on PostCollectionFacet {
+    type
+    label
+    slug
+    values {
+        ...PostCollectionFacetValueFragment
+    }
+}
+
+fragment PostCollectionFacetValueFragment on PostCollectionFacetValue {
+    name
+    value
+}
+
+query GetPostCollectionQuery($input: GetPostCollectionInput) {
+    getPostCollection(input: $input) {
+        ...BasePostCollectionFragment
+    }
+}
+
+
+query GetPostBySlugQuery($slug: String!) {
+    getPostBySlug(slug: $slug) {
+        ...BasePostPageFragment
+    }
+}
+
+query GetPostPreviewQuery($input: PostPreviewInput) {
+    getPostPreview(input: $input) {
+        ...BasePostPageFragment
+    }
 }

@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "@wordpress/block-library/build-style/common.css";
+@import "@wordpress/block-library/build-style/style.css";
+@import "@wordpress/block-library/build-style/theme.css";
+@import "basics.css";
+
+
+/***
+ * Editor specific styles
+ */
+.editor-styles-wrapper {
+    .wp-block-post-title {
+        @apply mb-10;
+    }
+
+    .is-root-container.wp-block-post-content {
+        /***
+         * Reproduce the-content gap between blocks
+         */
+
+        & > * {
+            @apply mb-4;
+        }
+    }
+
+    /***
+     * Fix the list styles in the editor for no line breaks
+     */
+    ul, ol {
+        @apply list-outside;
+    }
+}

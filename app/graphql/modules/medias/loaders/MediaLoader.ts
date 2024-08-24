@@ -13,7 +13,7 @@ export class MediaLoader {
             return response.data;
         } catch (e) {
             console.error('error', e);
-            return [];
+            return null;
         }
     }
 }
